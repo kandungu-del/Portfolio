@@ -3,58 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Kahindo Ndungu - Get in touch for collaborations and opportunities.">
+
+    <meta name="description" content="Contact Kahindo Ndungu – Get in touch for collaborations, learning opportunities, and projects.">
     <meta name="author" content="Kahindo Ndungu">
+
     <title>Kahindo Ndungu | Contact</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo"><a href="index.html">Kahindo Ndungu</a></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <h1>Get In <span class="highlight">Touch</span></h1>
-        <p>I am open to learning opportunities and collaborations</p>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <p style="font-size: 1.2rem; margin-bottom: 2rem;">I'd love to hear from you! Feel free to reach out for any opportunities or collaborations.</p>
-        
-        <div style="max-width: 600px; margin: 0 auto; text-align: center;">
-            <h3 style="color: #f0f0f0; margin-bottom: 2rem;">Connect With Me</h3>
-            
-            <div style="margin-bottom: 2rem;">
-                <h4 style="color: #f0f0f0; margin-bottom: 1rem;">Email</h4>
-                <a href="mailto:ka.ndungu@lightacademy.sc.ke" class="btn">Send Me an Email</a>
-            </div>
-
-            <div style="margin-bottom: 2rem;">
-                <h4 style="color: #f0f0f0; margin-bottom: 1rem;">GitHub</h4>
-                <a href="https://github.com/kandungu-del" class="btn" target="_blank">Visit My GitHub</a>
-            </div>
-
-            <div>
-                <h4 style="color: #f0f0f0; margin-bottom: 1rem;">Email Address</h4>
-                <p style="color: #f0f0f0; font-size: 1.1rem;">ka.ndungu@lightacademy.sc.ke</p>
-            </div>
+<!-- ============================= -->
+<!-- HEADER / NAVIGATION -->
+<!-- ============================= -->
+<header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">Kahindo Ndungu</a>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 Kahindo Ndungu. All rights reserved.</p>
-    </footer>
+        <!-- Hamburger Menu -->
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <!-- Nav Links -->
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" class="active">Contact</a>
+
+            <!-- Theme Toggle -->
+            <button id="themeToggle" class="theme-toggle">☀ / 🌙</button>
+        </div>
+    </nav>
+</header>
+
+<!-- ============================= -->
+<!-- HERO -->
+<!-- ============================= -->
+<section class="hero reveal">
+    <h1>Get In <span class="highlight">Touch</span></h1>
+    <p>I am open to learning opportunities and collaborations</p>
+</section>
+
+<!-- ============================= -->
+<!-- CONTACT SECTION -->
+<!-- ============================= -->
+<section id="contact" class="contact reveal">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+        I'd love to hear from you! Feel free to reach out for opportunities, collaborations, or questions.
+    </p>
+
+    <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+
+        <div style="margin-bottom: 2.5rem;">
+            <h3 style="color: #f0f0f0; margin-bottom: 1rem;">Email</h3>
+            <a href="mailto:ka.ndungu@lightacademy.sc.ke" class="btn">
+                Send Me an Email
+            </a>
+        </div>
+
+        <div style="margin-bottom: 2.5rem;">
+            <h3 style="color: #f0f0f0; margin-bottom: 1rem;">GitHub</h3>
+            <a href="https://github.com/kandungu-del" class="btn" target="_blank" rel="noopener">
+                Visit My GitHub
+            </a>
+        </div>
+
+        <div>
+            <h3 style="color: #f0f0f0; margin-bottom: 1rem;">Email Address</h3>
+            <p style="color: #f0f0f0; font-size: 1.1rem;">
+                ka.ndungu@lightacademy.sc.ke
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============================= -->
+<!-- FOOTER -->
+<!-- ============================= -->
+<footer>
+    <p>&copy; 2026 Kahindo Ndungu. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
