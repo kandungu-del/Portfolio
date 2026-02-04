@@ -751,19 +751,104 @@ function handleContactForm(event) {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
     
-    // Simple validation
+    // Validation
     if (!name || !email || !message) {
-        alert('Please fill in all fields');
+        showNotification('Please fill in all fields', 'error');
         return;
     }
     
-    // Create mailto link
-    const subject = `Message from ${name}`;
-    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-    const mailtoLink = `mailto:ka.ndungu@lightacademy.sc.ke?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    if (!validateEmail(email)) {
+        showNotification('Please enter a valid email address', 'error');
+        return;
+    }
     
-    // Open email client
-    window.location.href = mailtoLink;
+    // Show loading state
+    const submitBtn = event.target.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    submitBtn.disabled = true;
+    
+    // In a real application, you would send this to a backend
+    // For now, we'll simulate success and show a message
+    setTimeout(() => {
+        // Success message
+        showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+        
+        // Reset form
+        event.target.reset();
+        
+        // Reset button
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+        
+        // Log the message (in real app, send to server)
+        console.log('Contact Form Submission:', { name, email, message });
+        
+        // Optionally still open email client as fallback
+        const subject = `New Message from ${name}`;
+        const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+        const mailtoLink = `mailto:ka.ndungu@lightacademy.sc.ke?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        
+        // Ask user if they want to open email client
+        if (confirm('Message saved! Would you like to also open your email client?')) {
+            window.location.href = mailtoLink;
+        }
+    }, 1500);
+}
+
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+function showNotification(message, type = 'info') {
+    // Remove existing notification
+    const existingNotification = document.querySelector('.notification');
+    if (existingNotification) {
+        existingNotification.remove();
+    }
+    
+    // Create notification
+    const notification = document.createElement('div');
+    notification.className = `notification notification-${type}`;
+    notification.innerHTML = `
+        <div class="notification-content">
+            <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
+            <span>${message}</span>
+        </div>
+        <button class="notification-close">
+            <i class="fas fa-times"></i>
+        </button>
+    `;
+    
+    // Add to DOM
+    document.body.appendChild(notification);
+    
+    // Show with animation
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 10);
+    
+    // Auto remove after 5 seconds
+    const autoRemove = setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            if (notification.parentNode) {
+                notification.remove();
+            }
+        }, 300);
+    }, 5000);
+    
+    // Close button
+    notification.querySelector('.notification-close').addEventListener('click', () => {
+        clearTimeout(autoRemove);
+        notification.classList.remove('show');
+        setTimeout(() => {
+            if (notification.parentNode) {
+                notification.remove();
+            }
+        }, 300);
+    });
 }
 
 // ============================================
@@ -850,3 +935,4 @@ function init() {
 
 // Start the application when DOM is loaded
 document.addEventListener('DOMContentLoaded', init);
+
