@@ -2,123 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Kahindo Ndungu | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Kahindo Ndungu - Student developer specializing in web development, HTML, CSS, and JavaScript.">
-    <meta name="author" content="Kahindo Ndungu">
-    <title>Kahindo Ndungu | Home</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
 
-<!-- ===== HEADER / NAV ===== -->
 <header>
     <nav>
-        <div class="logo"><a href="index.html">Kahindo Ndungu</a></div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="logo">Kahindo</div>
+
+        <button id="menuToggle" class="menu-toggle">☰</button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button id="themeToggle" class="theme-toggle">🌙</button>
+        </div>
     </nav>
 </header>
 
-<!-- ===== HERO ===== -->
-<section class="hero reveal">
-    <h1>Welcome to My <span class="highlight">Portfolio</span></h1>
-    <p>Explore my work and projects</p>
+<section id="home" class="hero reveal">
+    <h1>Hi, I’m <span class="highlight">Kahindo</span></h1>
+    <p>A student web developer building clean & modern websites.</p>
+    <a href="#projects" class="btn">View Projects</a>
 </section>
 
-<!-- ===== ABOUT SUMMARY ===== -->
-<section class="content-section reveal">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-content">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTArKryFw84jCD73_sypFgQThAmn3Qad2ZcFg&s" alt="Kahindo Ndungu" class="about-img">
-        <div class="about-text">
-            <p>I am a student exploring technology with a passion for coding and web development. I love creating functional, responsive websites and continually improving my skills.</p>
-            <p><strong>Core Skills:</strong> HTML, CSS, JavaScript, Web Development, Responsive Design, Problem Solving</p>
-            <p><strong>Driven By:</strong> Creating user-friendly, visually appealing websites that solve real problems.</p>
-            <a href="about.html" class="btn">Learn More About Me</a>
-        </div>
-    </div>
+<section id="about" class="reveal">
+    <h2>About Me</h2>
+    <p>
+        I’m passionate about web development and constantly improving
+        my skills in HTML, CSS, and JavaScript.
+    </p>
 </section>
 
-<!-- ===== SERVICES / SKILLS ===== -->
-<section class="content-section reveal">
-    <h2 class="section-title">Services & Skills</h2>
-    <div class="skills-content">
-        <div class="skill-item">
-            <h3>Web Development</h3>
-            <p>Building responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
-        </div>
-        <div class="skill-item">
-            <h3>Front-End Design</h3>
-            <p>Creating visually appealing and intuitive interfaces for optimal user experience.</p>
-        </div>
-        <div class="skill-item">
-            <h3>Problem Solving</h3>
-            <p>Approaching challenges with analytical thinking and creative solutions.</p>
-        </div>
-        <div class="skill-item">
-            <h3>Learning & Growth</h3>
-            <p>Committed to mastering new technologies and continuously improving.</p>
-        </div>
-    </div>
-</section>
+<section id="projects" class="reveal">
+    <h2>Projects</h2>
 
-<!-- ===== PROJECTS PREVIEW ===== -->
-<section class="content-section reveal">
-    <h2 class="section-title">Projects</h2>
     <div class="project-grid">
         <div class="project-card">
-            <img src="https://placehold.co/600x400" alt="Project 1" class="project-img">
-            <div class="project-info">
-                <h3>Portfolio Website</h3>
-                <p>A responsive portfolio showcasing my web development skills.</p>
-                <div class="tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JavaScript</span>
-                </div>
-            </div>
+            <h3>Project One</h3>
+            <p>Simple responsive website.</p>
         </div>
+
         <div class="project-card">
-            <img src="https://placehold.co/600x400" alt="Project 2" class="project-img">
-            <div class="project-info">
-                <h3>Project Two</h3>
-                <p>A project demonstrating growing skills in web design and JavaScript.</p>
-                <div class="tags">
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">Web Design</span>
-                </div>
-            </div>
+            <h3>Project Two</h3>
+            <p>JavaScript interactive app.</p>
         </div>
+
         <div class="project-card">
-            <img src="https://placehold.co/600x400" alt="Project 3" class="project-img">
-            <div class="project-info">
-                <h3>Project Three</h3>
-                <p>Latest work or design concept to showcase creativity.</p>
-                <div class="tags">
-                    <span class="tag">Design</span>
-                    <span class="tag">Coding</span>
-                </div>
-            </div>
+            <h3>Project Three</h3>
+            <p>Personal portfolio design.</p>
         </div>
     </div>
-    <a href="portfolio.html" class="btn">View All Projects</a>
 </section>
 
-<!-- ===== CONTACT PREVIEW ===== -->
-<section class="content-section reveal">
-    <h2 class="section-title">Contact</h2>
-    <p>I’m open to learning opportunities and collaborations. Let’s connect!</p>
-    <a href="contact.html" class="btn">Get In Touch</a>
+<section id="contact" class="reveal">
+    <h2>Contact</h2>
+    <p>Email: ka.ndungu@lightacademy.sc.ke</p>
 </section>
 
-<!-- ===== FOOTER ===== -->
 <footer>
-    <p>&copy; 2026 Kahindo Ndungu. All rights reserved.</p>
+    <p>© 2026 Kahindo Ndungu</p>
 </footer>
 
 </body>
