@@ -879,5 +879,61 @@ a:hover {
     .btn {
         width: 100%;
     }
+   /* ============================================
+   EXPERIENCE SECTION FIXES
+   ============================================ */
+
+/* Fix spacing in experience section */
+.experience-timeline {
+    margin-top: var(--spacing-lg);
 }
+
+.timeline-item {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-date {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-text-on-primary);
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.timeline-content {
+    margin-top: var(--spacing-sm);
+}
+
+.timeline-content h3 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline-content p {
+    margin-bottom: var(--spacing-md);
+}
+
+/* Specific fix for the skill tags spacing in experience */
+.timeline-content .skill-list {
+    margin-top: var(--spacing-sm);
+    margin-bottom: 0;
+}
+
+.timeline-content .skill-tag {
+    margin: 2px;
+}
+
+/* Additional spacing for sections */
+.mt-xl {
+    margin-top: var(--spacing-xl) !important;
+}
+}
+
 
