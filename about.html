@@ -1,201 +1,215 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Kahindo Ndungu - Learn about my background, experience, skills, and personal profile.">
+
+    <meta name="description" content="About Kahindo Ndungu – Learn about my background, experience, skills, and passion for web development.">
     <meta name="author" content="Kahindo Ndungu">
+
     <title>Kahindo Ndungu | About</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo"><a href="index.html">Kahindo Ndungu</a></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <h1>About <span class="highlight">Me</span></h1>
-        <p>Get to know who I am and my passion for web development</p>
-    </section>
-
-    <section class="content-section">
-        <h2 class="section-title">Who am I?</h2>
-        <div class="about-content">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTArKryFw84jCD73_sypFgQThAmn3Qad2ZcFg&s" alt="Kahindo Ndungu" class="about-img">
-            <div class="about-text">
-                <h3>My Introduction</h3>
-                <p>
-                    I am a student currently exploring the world of technology. I have a strong passion 
-                    for coding and web development. I love learning new technologies and applying them 
-                    to build functional and responsive websites. I am constantly looking for new 
-                    challenges to improve my skills.
-                </p>
-                <p>
-                    My journey in tech started with a curiosity to understand how websites work. Over time, 
-                    I've developed a strong foundation in front-end development and continue to explore 
-                    new technologies and best practices in web development.
-                </p>
-
-                <h3 style="margin-top: 2rem;">Core Skills</h3>
-                <p><strong>HTML, CSS, JavaScript, Web Development, Responsive Design, Problem Solving</strong></p>
-
-                <h3 style="margin-top: 2rem;">What Drives Me</h3>
-                <p>
-                    I'm passionate about creating user-friendly, visually appealing websites that solve real problems. 
-                    I believe in continuous learning and staying updated with industry trends. Every project is an 
-                    opportunity to grow and improve my craft.
-                </p>
-            </div>
+<!-- ============================= -->
+<!-- HEADER / NAVIGATION -->
+<!-- ============================= -->
+<header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">Kahindo Ndungu</a>
         </div>
-    </section>
 
-    <section class="content-section">
-        <h2 class="section-title">Experience & Background</h2>
-        <div class="experience-content">
-            <h3>My Journey</h3>
+        <!-- Hamburger Menu -->
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <!-- Nav Links -->
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+
+            <!-- Theme Toggle -->
+            <button id="themeToggle" class="theme-toggle">☀ / 🌙</button>
+        </div>
+    </nav>
+</header>
+
+<!-- ============================= -->
+<!-- HERO -->
+<!-- ============================= -->
+<section class="hero reveal">
+    <h1>About <span class="highlight">Me</span></h1>
+    <p>Get to know who I am and my passion for web development</p>
+</section>
+
+<!-- ============================= -->
+<!-- WHO AM I -->
+<!-- ============================= -->
+<section class="content-section reveal">
+    <h2 class="section-title">Who am I?</h2>
+
+    <div class="about-content">
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTArKryFw84jCD73_sypFgQThAmn3Qad2ZcFg&s"
+            alt="Portrait of Kahindo Ndungu"
+            class="about-img"
+        >
+
+        <div class="about-text">
+            <h3>My Introduction</h3>
             <p>
-                I started my coding journey as a student with a curiosity to understand how websites work. 
-                Over time, I've developed a strong foundation in front-end development and continue to explore 
-                new technologies and best practices in web development.
+                I am a student currently exploring the world of technology. I have a strong passion
+                for coding and web development. I love learning new technologies and applying them
+                to build functional and responsive websites.
             </p>
-            <h3>Education</h3>
             <p>
-                Currently studying at Light Academy, where I focus on building practical skills in web development 
-                and programming. I'm passionate about continuous learning and staying updated with industry trends.
-            </p>
-        </div>
-    </section>
-
-    <section class="content-section">
-        <h2 class="section-title">Services & Skills</h2>
-        <div class="skills-content">
-            <div class="skill-item">
-                <h3>Web Development</h3>
-                <p>Building responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
-            </div>
-            <div class="skill-item">
-                <h3>Front-End Design</h3>
-                <p>Creating visually appealing and intuitive user interfaces for optimal user experience.</p>
-            </div>
-            <div class="skill-item">
-                <h3>Problem Solving</h3>
-                <p>Approaching challenges with analytical thinking and creative solutions.</p>
-            </div>
-            <div class="skill-item">
-                <h3>Learning & Growth</h3>
-                <p>Committed to continuous improvement and mastering new technologies and frameworks.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="content-section">
-        <h2 class="section-title">Personal Profile</h2>
-        <div class="personal-content">
-            <h3>Why I'm Passionate About Coding</h3>
-            <p>
-                I'm passionate about coding because it allows me to solve real-world problems and create meaningful solutions. 
-                The ability to turn ideas into functional applications is both exciting and rewarding. Every project is an opportunity 
-                to learn and grow as a developer.
+                My journey in tech started with a curiosity to understand how websites work. Over time,
+                I've developed a strong foundation in front-end development and continue to explore
+                new technologies and best practices.
             </p>
 
-            <h3>Soft Skills</h3>
-            <div class="soft-skills">
-                <div class="skill-badge">Communication</div>
-                <div class="skill-badge">Team Collaboration</div>
-                <div class="skill-badge">Problem Solving</div>
-                <div class="skill-badge">Time Management</div>
-                <div class="skill-badge">Adaptability</div>
-                <div class="skill-badge">Critical Thinking</div>
-            </div>
+            <h3 style="margin-top:2rem;">Core Skills</h3>
+            <p><strong>HTML, CSS, JavaScript, Web Development, Responsive Design, Problem Solving</strong></p>
 
-            <h3>Languages</h3>
-            <p>English (Fluent), Swahili (Native)</p>
-
-            <h3>Certifications & Courses</h3>
-            <ul>
-                <li>Web Development Fundamentals - Light Academy</li>
-                <li>HTML & CSS Mastery</li>
-                <li>JavaScript Essentials</li>
-                <li>Responsive Web Design</li>
-            </ul>
-
-            <h3>Personal Interests</h3>
+            <h3 style="margin-top:2rem;">What Drives Me</h3>
             <p>
-                Beyond coding, I enjoy exploring new technologies, reading about tech trends, contributing to learning communities, 
-                and mentoring others. I'm also interested in digital innovation and how technology can improve people's lives.
+                I'm passionate about creating user-friendly, visually appealing websites that solve real problems.
+                I believe in continuous learning and staying updated with industry trends.
             </p>
-
-            <h3>Future Goals & Aspirations</h3>
-            <ul>
-                <li>Master full-stack web development</li>
-                <li>Build innovative applications that solve real problems</li>
-                <li>Contribute to open-source projects</li>
-                <li>Become a skilled software engineer</li>
-                <li>Help and mentor junior developers</li>
-                <li>Continue learning emerging technologies</li>
-            </ul>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="content-section">
-        <h2 class="section-title">My Projects</h2>
-        <div class="project-grid">
-            
-            <div class="project-card">
-                <a href="project1.html">
-                    <img src="https://placehold.co/600x400" alt="Project 1" class="project-img">
-                    <div class="project-info">
-                        <h3>My Portfolio Website</h3>
-                        <p>A responsive portfolio showcasing my web development skills and projects.</p>
-                        <div class="tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
+<!-- ============================= -->
+<!-- EXPERIENCE -->
+<!-- ============================= -->
+<section class="content-section reveal">
+    <h2 class="section-title">Experience & Background</h2>
 
-            <div class="project-card">
-                <img src="https://placehold.co/600x400" alt="Project 2" class="project-img">
+    <div class="experience-content">
+        <h3>My Journey</h3>
+        <p>
+            I started my coding journey as a student with a curiosity to understand how websites work.
+            Over time, I've developed a strong foundation in front-end development.
+        </p>
+
+        <h3>Education</h3>
+        <p>
+            Currently studying at Light Academy, focusing on practical skills in web development and programming.
+        </p>
+    </div>
+</section>
+
+<!-- ============================= -->
+<!-- SKILLS -->
+<!-- ============================= -->
+<section class="content-section reveal">
+    <h2 class="section-title">Services & Skills</h2>
+
+    <div class="skills-content">
+        <div class="skill-item reveal">
+            <h3>Web Development</h3>
+            <p>Building responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="skill-item reveal">
+            <h3>Front-End Design</h3>
+            <p>Creating visually appealing and intuitive user interfaces.</p>
+        </div>
+
+        <div class="skill-item reveal">
+            <h3>Problem Solving</h3>
+            <p>Approaching challenges with analytical thinking and creative solutions.</p>
+        </div>
+
+        <div class="skill-item reveal">
+            <h3>Learning & Growth</h3>
+            <p>Committed to continuous improvement and mastering new technologies.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================= -->
+<!-- PERSONAL PROFILE -->
+<!-- ============================= -->
+<section class="content-section reveal">
+    <h2 class="section-title">Personal Profile</h2>
+
+    <div class="personal-content">
+        <h3>Why I'm Passionate About Coding</h3>
+        <p>
+            Coding allows me to solve real-world problems and turn ideas into functional solutions.
+            Every project is an opportunity to learn and grow.
+        </p>
+
+        <h3>Soft Skills</h3>
+        <div class="soft-skills">
+            <div class="skill-badge">Communication</div>
+            <div class="skill-badge">Team Collaboration</div>
+            <div class="skill-badge">Problem Solving</div>
+            <div class="skill-badge">Time Management</div>
+            <div class="skill-badge">Adaptability</div>
+            <div class="skill-badge">Critical Thinking</div>
+        </div>
+
+        <h3>Languages</h3>
+        <p>English (Fluent), Swahili (Native)</p>
+
+        <h3>Certifications & Courses</h3>
+        <ul>
+            <li>Web Development Fundamentals – Light Academy</li>
+            <li>HTML & CSS Mastery</li>
+            <li>JavaScript Essentials</li>
+            <li>Responsive Web Design</li>
+        </ul>
+
+        <h3>Future Goals</h3>
+        <ul>
+            <li>Master full-stack web development</li>
+            <li>Build innovative applications</li>
+            <li>Contribute to open-source projects</li>
+            <li>Become a skilled software engineer</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================= -->
+<!-- PROJECTS -->
+<!-- ============================= -->
+<section class="content-section reveal">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="project-grid">
+        <div class="project-card reveal">
+            <a href="project1.html">
+                <img src="https://placehold.co/600x400" alt="Portfolio Website Project" class="project-img">
                 <div class="project-info">
-                    <h3>Project Title Two</h3>
-                    <p>A description of another project. This shows my growing skills.</p>
+                    <h3>My Portfolio Website</h3>
+                    <p>A responsive portfolio showcasing my web development skills.</p>
                     <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
                         <span class="tag">JavaScript</span>
-                        <span class="tag">Web Design</span>
                     </div>
                 </div>
-            </div>
-
-            <div class="project-card">
-                <img src="https://placehold.co/600x400" alt="Project 3" class="project-img">
-                <div class="project-info">
-                    <h3>Project Title Three</h3>
-                    <p>My latest work or design concept.</p>
-                    <div class="tags">
-                        <span class="tag">Design</span>
-                        <span class="tag">Coding</span>
-                    </div>
-                </div>
-            </div>
-
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Kahindo Ndungu. All rights reserved.</p>
-    </footer>
+<!-- ============================= -->
+<!-- FOOTER -->
+<!-- ============================= -->
+<footer>
+    <p>&copy; 2026 Kahindo Ndungu. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
