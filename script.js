@@ -175,19 +175,19 @@ const pages = {
                 <div class="container">
                     <h2 class="text-center mb-lg reveal">Education</h2>
                     <div class="experience-timeline">
-                        <div class="timeline-item reveal">
-                            <div class="timeline-date">2023 - Present</div>
-                            <div class="timeline-content">
-                                <h3>Light Academy</h3>
-                                <p>Currently studying at Light Academy, focusing on web development and building real-world projects.</p>
-                                <div class="skill-list">
-                                    <span class="skill-tag">Web Development</span>
-                                    <span class="skill-tag">Programming</span>
-                                    <span class="skill-tag">Computer Science</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="timeline-item reveal">
+        <div class="timeline-date">2025 - Present</div>
+        <div class="timeline-content">
+            <h3>Light Academy</h3>
+            <p>Currently studying at Light Academy, focusing on web development and building real-world projects.</p>
+            <div class="skill-list">
+                <span class="skill-tag">Web Development</span>
+                <span class="skill-tag">Programming</span>
+                <span class="skill-tag">Computer Science</span>
+            </div>
+        </div>
+    </div>
+</div>
                     
                     <h2 class="text-center mb-lg reveal mt-xl">Courses & Certifications</h2>
                     <div class="skills-grid">
@@ -626,3 +626,4 @@ function init() {
 
 // Start the application when DOM is loaded
 document.addEventListener('DOMContentLoaded', init);
+
