@@ -173,3 +173,4 @@ scrollTopBtn.addEventListener('click', function() {
 
 // Log page analytics
 console.log('Portfolio loaded - Interactive features enabled!');
+
